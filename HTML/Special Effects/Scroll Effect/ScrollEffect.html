@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Light Parallax Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg")
+        let moon = document.getElementById("moon")
+        let mountain = document.getElementById("mountain")
+        let road = document.getElementById("road")
+        let text = document.getElementById("text")
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+    <h3 id="heading">Parallax Background Scrolling</h3>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum ab cupiditate, quisquam expedita ipsum nihil praesentium autem esse cumque, porro quis? Veritatis commodi nam dolor a inventore rerum tempore!
+    Architecto odio ipsa nihil praesentium veritatis optio dolorum omnis officia iste sequi, facere in ut eos neque minus illo nobis quibusdam sunt? Voluptates iure cupiditate error ipsa repudiandae velit pariatur?
+    Veritatis quasi commodi nisi incidunt quod doloremque impedit nesciunt repudiandae maiores odit unde saepe cupiditate necessitatibus neque nobis libero possimus, mollitia eaque facilis blanditiis sequi error sed consectetur? Mollitia, magnam.
+    Blanditiis, in maiores at fugiat facere ullam similique voluptatum, perspiciatis assumenda laboriosam vitae quis, quod ducimus. Sapiente accusantium aut neque quam eveniet illo, sunt exercitationem, perspiciatis, laudantium nostrum necessitatibus minima.
+    Numquam quam suscipit accusamus veniam iste id eligendi, fuga impedit modi vel velit nesciunt soluta quae, vero libero cupiditate recusandae temporibus? Veniam dicta doloribus odio aspernatur quae eveniet incidunt corporis.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nam sunt voluptatum architecto eaque aspernatur rem officiis voluptatem aliquid illum voluptate, mollitia iure laboriosam inventore maiores dolore suscipit, nemo tempora.
+    Sint unde nam blanditiis? Saepe vitae asperiores aperiam hic? Dolorum voluptatibus quam iure doloribus corrupti in nemo placeat nihil. Expedita hic voluptas obcaecati exercitationem maiores officia provident perspiciatis qui itaque?
+    Unde labore, voluptas rem at tempore modi vero sequi quis quos adipisci soluta, commodi deserunt officia, tenetur assumenda! Praesentium blanditiis quo illum alias officia ratione cumque doloribus ipsum minus at.
+    Vero maiores harum quidem aperiam natus, aut, minus aspernatur reprehenderit facere, optio cupiditate sint fugiat aliquid? Beatae, optio saepe, quae rem totam repellendus nemo ducimus reprehenderit mollitia quia recusandae accusantium?
+    Consectetur quasi, consequuntur eveniet temporibus quam excepturi ipsa optio quo et dolor, dignissimos recusandae minus cupiditate magnam rerum asperiores illum, quia voluptates officiis nam earum. Incidunt repellendus molestias voluptates.</p>
+</body>
+
+</html>

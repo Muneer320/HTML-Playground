@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind Mousemove effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h2>It's just a blank page write...</h2> -->
+    <section id="section">
+        <h2>Hello</h2>
+        <h2>How is it? ;)</h2>
+        <div class="circle"></div>
+    </section>
+    <script>
+        const pos = document.documentElement;
+        pos.addEventListener('mousemove', e => {
+            pos.style.setProperty('--x', e.clientX + 'px');
+            pos.style.setProperty('--y', e.clientY + 'px');
+        })
+    </script>
+</body>
+</html>
